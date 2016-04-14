@@ -1,0 +1,25 @@
+{
+  "name": "angular2-webpack",
+  "description": "Angular 2 Dashboard with Webpack",
+  "main": "src/index.html",
+  "authors": [
+    "zsiva <m.carrizo.ibarra@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Angular2",
+    "Angular2 Dashboard",
+    "Webpack"
+  ],
+  "homepage": "https://github.com/zsiva/angular2-webpack",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "rdash-ui": "1.0.*"
+  }
+}
