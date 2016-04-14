@@ -1,21 +1,55 @@
-<h3>
-  Angular 2 Seed
-</h3>
-<nav>
-	<a [routerLink]=" ['/Home'] ">
-    Home
-  </a>
-  |
-	<a [routerLink]=" ['/Jumpers'] ">
-    Jumpers
-  </a>
-</nav>
+<div id="page-wrapper" [ngClass]="{'open': toggle}" ng-cloak>
+    <div id="sidebar-wrapper">
+        <ul class="sidebar">
+            <li class="sidebar-main">
+                <a (click)="toggleSidebar()">
+                    Dashboard
+                    <span class="menu-icon glyphicon glyphicon-transfer"></span>
+                </a>
+            </li>
+            <li class="sidebar-title"><span>NAVIGATION</span></li>
+            <li class="sidebar-list">
+                <a [routerLink]=" ['/Home'] ">Dashboard <span class="menu-icon fa fa-tachometer"></span></a>
+            </li>
+            <li class="sidebar-list">
+                <a [routerLink]=" ['/Jumpers'] ">Jumpers <span class="menu-icon fa fa-users"></span></a>
+            </li>
+        </ul>
+    </div>
+    <div id="content-wrapper">
+        <div class="page-content">
 
-<main>
-	<router-outlet></router-outlet>
-</main>
+            <!-- Header Bar -->
+            <div class="row header">
+                <div class="col-xs-12">
+                    <div class="user pull-right">
+                        <div class="item dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/avatar.jpg">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li class="dropdown-header">
+                                    User
+                                </li>
+                                <li class="divider"></li>
+                                <li class="link">
+                                    <a href="javascript:void(0)">
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Header Bar -->
+            <main>
+                <router-outlet></router-outlet>
+            </main>
 
-
-<footer>
-  © 2016
-</footer>
+            <footer>
+                © 2016
+            </footer>
+        </div><!-- End Page Content -->
+    </div><!-- End Content Wrapper -->
+</div>
