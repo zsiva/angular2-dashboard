@@ -6,7 +6,8 @@ import 'angular2/core';
 import 'angular2/http';
 import 'angular2/router';
 
-import '../bower_components/rdash-ui/dist/css/rdash.css';
+import '../bower_components/rdash-ui/dist/css/rdash.min.css';
+import '../bower_components/bootstrap/dist/css/bootstrap.min.css';
 
 // RxJS 5
 // import 'rxjs/Rx';
