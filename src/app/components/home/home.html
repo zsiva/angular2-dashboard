@@ -30,8 +30,8 @@
                 <a style="float: right">Manage</a>
             </rd-widget-header>
             <rd-widget-body classes="medium no-padding">
-                JUMPERS LIST
-            </rd-widget-body>
+                <collection-list [model]="jumpersService.all()"></collection-list>
+             </rd-widget-body>
         </rd-widget>
     </div>
     <div class="col-lg-6">
