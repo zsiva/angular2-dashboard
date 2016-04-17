@@ -1,6 +1,6 @@
-## angular2-dashboard
+# Introduction
 
-Angular 2 Dashboard with Webpack
+Angular2 dashboard with Webpack based on [RDash Angular2](https://github.com/ziyasal/rdash-angular2) and [Angular2-Seed](https://github.com/angular/angular2-seed)
 
 ### Usage
 - Clone or fork this repository
