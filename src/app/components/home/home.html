@@ -5,7 +5,7 @@
                 <div class="widget-icon green pull-left">
                     <i class="fa fa-users"></i>
                 </div>
-                <div class="title">3</div>
+                <div class="title">{{jumpers.length}}</div>
                 <div class="comment">Jumpers</div>
             </rd-widget-body>
         </rd-widget>
@@ -27,10 +27,10 @@
     <div class="col-lg-6">
         <rd-widget>
             <rd-widget-header [icon]="'fa-users'" [title]="'Jumpers'">
-                <a style="float: right">Manage</a>
+                <a class="text-right" [routerLink]="['/Jumpers']">Manage</a>
             </rd-widget-header>
             <rd-widget-body classes="medium no-padding">
-                <collection-list [model]="jumpersService.all()"></collection-list>
+                <collection-list [model]="jumpers"></collection-list>
              </rd-widget-body>
         </rd-widget>
     </div>
