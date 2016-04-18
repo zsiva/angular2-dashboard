@@ -8,8 +8,10 @@ import {NgFor} from 'angular2/common';
   <div class="table-responsive">
   <table class="table table-bordered">
     <thead>
-        <th class="bg-primary" *ngFor="#headerItem of header">{{headerItem}}</th>
-        <th class="bg-primary">Actions</th>
+        <tr>
+            <th class="bg-primary text-capitalize" *ngFor="#headerItem of header">{{headerItem}}</th>
+            <th class="bg-primary">Actions</th>
+        </tr>
     </thead>
     <tbody>
         <tr *ngFor="#row of model">
@@ -30,7 +32,6 @@ export class CollectionList {
   constructor() {
   }
   ngOnInit() {
-      console.log('model: ', this.model);
       this.header = Object.keys(this.model[0]);
   }
   items(row) : Array<string> {

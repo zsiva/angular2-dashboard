@@ -16,6 +16,8 @@ export class Jumpers {
   jumpers:any[];
 
   constructor(public jumpersService: JumperListService) {
-    /* TODO: get items from collection service */
+    this.jumpers = jumpersService.all().map((jumper) => {
+        return { name: jumper.name, points: jumper.points, likes: jumper.likes, countries: jumper.countries.length }
+     });
   }
 }
