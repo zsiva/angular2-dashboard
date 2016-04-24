@@ -1,10 +1,10 @@
 import {Component} from 'angular2/core';
-import {EditInputComponent} from './edit-input';
+import {IconInputComponent} from '../../inputs/icon-input';
 
 @Component({
   selector: 'edit-jumper',
   templateUrl: 'app/components/jumpers/edit/jumpers-edit.html',
-  directives: [EditInputComponent]
+  directives: [IconInputComponent]
 })
 export class EditJumperComponent {
 
