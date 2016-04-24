@@ -1,19 +1,15 @@
-import {Component, View} from 'angular2/angular2';
+import {Component, Input} from 'angular2/core';
+
 @Component({
     selector: 'edit-input',
-    properties: ['iconclass', 'placeholder']
-})
-@View({
     template:`<div class="input-group">
-        <div class="input-group-addon">
-            <i class="fa {{iconclass}}"></i></div>
-            <input type="text" class="form-control" [placeholder]="placeholder">
-        </div>
-    </div>`
+                <span class="input-group-addon"><i class="fa {{iconclass}}"></i></span>
+                    <input type="text" class="form-control" placeholder="{{placeholder}}">
+              </div>`
 })
 export class EditInputComponent{
-    iconclass: string[];
-    placeholder: string;
+    @Input() iconclass: string[];
+    @Input() placeholder: string;
   constructor() {
 
   }
