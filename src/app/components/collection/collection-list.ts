@@ -1,9 +1,10 @@
 import {Component, Input} from 'angular2/core';
 import {NgFor} from 'angular2/common';
+import {ROUTER_DIRECTIVES} from 'angular2/router';
 
 @Component({
   selector: 'collection-list',
-  directives: [NgFor],
+  directives: [NgFor, ROUTER_DIRECTIVES],
   template: `
   <div class="table-responsive">
   <table class="table table-bordered">
@@ -16,7 +17,7 @@ import {NgFor} from 'angular2/common';
     <tbody>
         <tr *ngFor="#row of model">
             <td *ngFor="#item of items(row);">{{row[item]}}</td>
-            <td><button (click)="edit()">Edit</button></td>
+            <td><a class="text-right" [routerLink]="['/JumperEdit']">Edit</a></td>
         </tr>
       </tbody>
   </table>
