@@ -10,14 +10,14 @@ import {ROUTER_DIRECTIVES} from 'angular2/router';
   <table class="table table-bordered">
     <thead>
         <tr>
-            <th class="bg-primary text-capitalize" *ngFor="#headerItem of header">{{headerItem}}</th>
-            <th class="bg-primary">Actions</th>
+            <th class="text-capitalize" *ngFor="#headerItem of header">{{headerItem}}</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="#row of model">
             <td *ngFor="#item of items(row);">{{row[item]}}</td>
-            <td><a class="text-right" [routerLink]="['/JumperEdit']">Edit</a></td>
+            <td><a class="text-right" [routerLink]="[infoLink]">Info</a></td>
         </tr>
       </tbody>
   </table>
@@ -28,6 +28,7 @@ import {ROUTER_DIRECTIVES} from 'angular2/router';
 export class CollectionList {
 
   @Input() model:any[];
+  @Input() infoLink:any[];
   header:any[];
 
   constructor() {
