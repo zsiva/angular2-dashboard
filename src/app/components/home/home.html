@@ -30,7 +30,7 @@
                 <a class="text-right" [routerLink]="['/Jumpers']">Manage</a>
             </rd-widget-header>
             <rd-widget-body classes="medium no-padding">
-                <collection-list [model]="jumpers"></collection-list>
+                <collection-list [model]="jumpers" [infoLink]="'/JumperEdit'"></collection-list>
              </rd-widget-body>
         </rd-widget>
     </div>
@@ -41,18 +41,6 @@
             </rd-widget-header>
             <rd-widget-body classes="medium no-padding">
                 COUNTRIES LIST
-            </rd-widget-body>
-        </rd-widget>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-6">
-        <rd-widget>
-            <rd-widget-header [icon]="'fa-flag'" [title]="'Flags'">
-                <a style="float: right">Manage</a>
-            </rd-widget-header>
-            <rd-widget-body classes="medium no-padding">
-                FLAGS LIST
             </rd-widget-body>
         </rd-widget>
     </div>
