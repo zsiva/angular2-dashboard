@@ -15,9 +15,13 @@ import {RdWidgetHeader} from '../../rd-widget-header/rd-widget-header';
 export class EditJumperComponent {
     countries:any = ['Spain', 'France', 'Germany'];
     jumper:any = [];
+    enabled: boolean = false;
 
     constructor(public jumpersService: JumperListService) {
         this.jumper = jumpersService.get();
-        console.log(this.jumper);
+    }
+
+    enableEditor() {
+        this.enabled = !this.enabled;
     }
 }
