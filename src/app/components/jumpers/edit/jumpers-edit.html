@@ -1,14 +1,16 @@
 <div class="row">
     <div class="col-lg-12">
         <rd-widget>
-            <rd-widget-header icon="fa-users" title="Jumpers">
-                Edit Jumper
-            </rd-widget-header>
-            <rd-widget-body classes="no-padding">
-                <icon-input [iconclass]="'fa-user'" [placeholder]="'Name'"></icon-input>
-                <icon-input [iconclass]="'fa-globe'" [placeholder]="'Jumps'"></icon-input>
-                <icon-input [iconclass]="'fa-flag-checkered'" [placeholder]="'Flags'"></icon-input>
-                <icon-input [iconclass]="'fa-globe'" [placeholder]="'Countries'"></icon-input>
+            <rd-widget-header icon="fa-user" title="Edit Jumper"></rd-widget-header>
+            <rd-widget-body>
+                <icon-input [iconclass]="'fa-user'" [placeholder]="'Name'" [value]="jumper.name"></icon-input>
+                <icon-input [iconclass]="'fa-trophy'" [placeholder]="'Points'" [value]="jumper.points"></icon-input>
+                <icon-input [iconclass]="'fa-thumbs-up'" [placeholder]="'Likes'" [value]="jumper.likes"></icon-input>
+                <icon-input [iconclass]="'fa-child'" [placeholder]="'Jumps'" [value]="jumper.jumps"></icon-input>
+                <icon-input [iconclass]="'fa-flag-checkered'" [placeholder]="'Flags'" [value]="jumper.countries.length"></icon-input>
+                <icon-input [iconclass]="'fa-globe'" [placeholder]="'Countries'" [value]="jumper.countries.length"></icon-input>
+
+                <multi-select-box [iconclass]="'fa-globe'" [items]="countries"></multi-select-box>
             </rd-widget-body>
         </rd-widget>
     </div>
