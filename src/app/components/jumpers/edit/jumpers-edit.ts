@@ -24,4 +24,8 @@ export class EditJumperComponent {
     enableEditor() {
         this.enabled = !this.enabled;
     }
+
+    updateJumper() {
+        this.jumpersService.update(this.jumper);
+    }
 }

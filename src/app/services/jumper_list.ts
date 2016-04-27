@@ -14,6 +14,10 @@ export class JumperListService {
     return this.jumpers[0];
   }
 
+  update(jumper):void {
+    console.log('jumper: ', jumper);
+  }
+
   all():any[] {
     return this.jumpers;
   }

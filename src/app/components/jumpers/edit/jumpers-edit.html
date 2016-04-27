@@ -13,7 +13,7 @@
                     <icon-input [iconclass]="'fa-flag-checkered'" [placeholder]="'Flags'" [value]="jumper.countries.length"></icon-input>
                     <icon-input [iconclass]="'fa-globe'" [placeholder]="'Countries'" [value]="jumper.countries.length"></icon-input>
                     <div class="pull-right" [hidden]=!enabled>
-                        <button class="btn btn-default">Save</button>
+                        <button class="btn btn-default" (click)="updateJumper()">Save</button>
                     </div>
                 </fieldset>
 
