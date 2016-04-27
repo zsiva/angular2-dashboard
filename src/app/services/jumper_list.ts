@@ -10,6 +10,10 @@ export class JumperListService {
     this.jumpers.push(value);
   }
 
+  get():any[] {
+    return this.jumpers[0];
+  }
+
   all():any[] {
     return this.jumpers;
   }
