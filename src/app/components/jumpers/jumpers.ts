@@ -14,10 +14,13 @@ import {CollectionList} from '../collection/collection-list';
 })
 export class Jumpers {
   jumpers:any[];
+  header:any[];
 
   constructor(public jumpersService: JumperListService) {
     this.jumpers = jumpersService.all().map((jumper) => {
         return { name: jumper.name, points: jumper.points, likes: jumper.likes, countries: jumper.countries.length }
      });
+
+     this.header = Object.keys(this.jumpers[0]);
   }
 }

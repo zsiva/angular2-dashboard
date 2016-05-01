@@ -10,14 +10,14 @@ import {ROUTER_DIRECTIVES} from 'angular2/router';
   <table class="table table-bordered">
     <thead>
         <tr>
-            <th class="text-capitalize" *ngFor="#headerItem of header">{{headerItem}}</th>
-            <th>Actions</th>
+            <th class="text-capitalize" *ngFor="#headerItem of tableHeader">{{headerItem}}</th>
+            <th [hidden]="!actions">Actions</th>
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="#row of model">
+        <tr *ngFor="#row of tableContent">
             <td *ngFor="#item of items(row);">{{row[item]}}</td>
-            <td><a class="text-right" [routerLink]="[infoLink]">Info</a></td>
+            <td [hidden]="!actions"><a class="text-right" [routerLink]="[infoLink, {id: '1'}]">Info</a></td>
         </tr>
       </tbody>
   </table>
@@ -27,18 +27,16 @@ import {ROUTER_DIRECTIVES} from 'angular2/router';
 
 export class CollectionList {
 
-  @Input() model:any[];
+  @Input() tableContent:any[];
   @Input() infoLink:any[];
-  header:any[];
+  @Input() tableHeader:any[];
+  @Input() actions:boolean = true;
 
   constructor() {
   }
   ngOnInit() {
-      this.header = Object.keys(this.model[0]);
   }
   items(row) : Array<string> {
     return Object.keys(row);
-  }
-  edit() {
   }
 }
