@@ -30,7 +30,7 @@
                 <a class="text-right" [routerLink]="['/Jumpers']">Manage</a>
             </rd-widget-header>
             <rd-widget-body classes="medium no-padding">
-                <collection-list [model]="jumpers" [infoLink]="'/JumperEdit'"></collection-list>
+                <collection-list [actions]="false" [tableContent]="jumpers" [tableHeader]="jumpersHeader" [infoLink]="'/JumperEdit'"></collection-list>
              </rd-widget-body>
         </rd-widget>
     </div>
@@ -40,7 +40,7 @@
                 <a style="float: right">Manage</a>
             </rd-widget-header>
             <rd-widget-body classes="medium no-padding">
-                COUNTRIES LIST
+                <collection-list [actions]="false" [tableContent]="flags" [tableHeader]="flagsHeader" [infoLink]="'/JumperEdit'"></collection-list>
             </rd-widget-body>
         </rd-widget>
     </div>
