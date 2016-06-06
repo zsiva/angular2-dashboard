@@ -9,7 +9,7 @@ export class JumperListService {
   add(value:any):void {
     this.jumpers.push(value);
   }
-
+  //TODO: get jumper through ID
   get():any[] {
     return this.jumpers[0];
   }

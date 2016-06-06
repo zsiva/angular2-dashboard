@@ -11,8 +11,33 @@ export class FlagsListService {
         {"name": "Andorra", "capital": "Andorra la Vella"},
         {"name": "Angola", "capital": "Luanda"},
         {"name": "Anguilla", "capital": "The Valley"},
-        {"name": "Antarctica"}
-
+        {"name": "Antarctica"},
+        {"name": "Antigua and Barbuda", "capital": "St. John's"},
+        {"name": "Argentina", "capital": "Buenos Aires"},
+        {"name": "Armenia", "capital": "Yerevan"},
+        {"name": "Australia", "capital": "Canberra"},
+        {"name": "Austria", "capital": "Vienna"},
+        {"name": "Azerbaijan", "capital": "Baku"},
+        {"name": "Bahamas", "capital": "Nassau"},
+        {"name": "Bahrain", "capital": "Manama"},
+        {"name": "Bangladesh", "capital": "Dhaka"},
+        {"name": "Barbados", "capital": "Bridgetown"},
+        {"name": "Belarus", "capital": "Minsk"},
+        {"name": "Belgium", "capital": "Brussels"},
+        {"name": "Belize", "capital": "Belmopan"},
+        {"name": "Benin", "capital": "Porto-Novo"},
+        {"name": "Bermuda", "capital": "Hamilton"},
+        {"name": "Bhutan", "capital": "Thimphu"},
+        {"name": "Bolivia", "capital": "La Paz"},
+        {"name": "Bonaire", "capital": "Kralendijk"},
+        {"name": "Bosnia and Herzegovina", "capital": "Sarajevo"},
+        {"name": "Botswana", "capital": "Gaborone"},
+        {"name": "Bonaire", "capital": "Kralendijk"},
+        {"name": "Brazil", "capital": "Brasilia"},
+        {"name": "Brunei", "capital": "Bandar Seri Begawan"},
+        {"name": "Bulgaria", "capital": "Sofia"},
+        {"name": "Burkina Faso", "capital": "Ouagadougou"},
+        {"name": "Burundi", "capital": "Bujumbura"}
     ];
 
     constructor() {
