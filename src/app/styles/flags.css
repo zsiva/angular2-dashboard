@@ -1,0 +1,10 @@
+.flags { background: url('app/images/flags_sprite.png') no-repeat top left; width: 55px; height: 38px;  }
+.flags.afghanistan { background-position: 0 0; height: 36px; }
+.flags.aland_islands { background-position: 0 -38px; height: 35px; }
+.flags.albania { background-position: 0 -75px; }
+.flags.algeria { background-position: 0 -115px; }
+.flags.american_samoa { background-position: 0 -155px; height: 27px; }
+.flags.andorra { background-position: 0 -184px; }
+.flags.angola { background-position: 0 -224px; }
+.flags.anguilla { background-position: 0 -264px; height: 27px; }
+.flags.antarctica { background-position: 0 -293px; height: 36px; }

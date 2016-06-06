@@ -3,7 +3,8 @@ import {Router, RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 
 import {Home} from './components/home/home';
 import {Jumpers} from './components/jumpers/jumpers';
-import {EditJumperComponent} from './components/jumpers/edit/jumpers-edit'
+import {EditJumperComponent} from './components/jumpers/edit/jumpers-edit';
+import {Flags} from './components/flags/list';
 
 @Component({
     selector: 'seed-app',
@@ -11,12 +12,13 @@ import {EditJumperComponent} from './components/jumpers/edit/jumpers-edit'
     pipes: [],
     directives: [ROUTER_DIRECTIVES],
     templateUrl: 'app/seed-app.html',
-    styleUrls: ['app/app.css']
+    styleUrls: ['app/styles/app.css']
 })
 @RouteConfig([
     { path: '/home', component: Home, name: 'Home', useAsDefault: true },
     { path: '/jumpers', component: Jumpers, as: 'Jumpers' },
-    { path: '/jumper-edit', component: EditJumperComponent, as: 'JumperEdit' }
+    { path: '/jumper-edit', component: EditJumperComponent, as: 'JumperEdit' },
+    { path: '/flags', component: Flags, as: 'Flags' },
 ])
 export class SeedApp {
     mobileView: number = 992;
