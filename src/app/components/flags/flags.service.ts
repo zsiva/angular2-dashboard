@@ -37,7 +37,7 @@ export class FlagsListService {
         {"name": "Brunei", "capital": "Bandar Seri Begawan"},
         {"name": "Bulgaria", "capital": "Sofia"},
         {"name": "Burkina Faso", "capital": "Ouagadougou"},
-        {"name": "Burundi", "capital": "Bujumbura"}
+        {"name": "Burundi", "capital": "Bujumbura"},
     ];
 
     constructor() {

@@ -6,7 +6,7 @@ import {RdWidget} from '../rd-widget/rd-widget';
 import {RdWidgetHeader} from '../rd-widget-header/rd-widget-header';
 import {CollectionList} from '../collection/collection-list';
 import {JumperListService} from '../../services/jumper_list';
-import {FlagsListService} from '../../services/flags_list';
+import {FlagsListService} from '../flags/flags.service';
 
 @Component({
     selector: 'home',
