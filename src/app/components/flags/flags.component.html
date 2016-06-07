@@ -9,11 +9,11 @@
                     <table class="table table-bordered">
                       <thead>
                           <tr>
-                              <th *ngFor="#headerItem of header">{{headerItem}}</th>
+                              <th *ngFor="let headerItem of header">{{headerItem}}</th>
                           </tr>
                       </thead>
                       <tbody>
-                          <tr *ngFor="#flag of flags">
+                          <tr *ngFor="let flag of flags">
                               <td class="col-xs-3">
                                   <div class="flags {{flag.class}}"></div>
                               </td>

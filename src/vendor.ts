@@ -1,10 +1,10 @@
 // Vendors
 
 // Angular 2
-import 'angular2/platform/browser';
-import 'angular2/core';
-import 'angular2/http';
-import 'angular2/router';
+import '@angular/platform-browser';
+import '@angular/core';
+import '@angular/http';
+import '@angular/router';
 
 import '../bower_components/rdash-ui/dist/css/rdash.min.css';
 import '../bower_components/bootstrap/dist/css/bootstrap.min.css';

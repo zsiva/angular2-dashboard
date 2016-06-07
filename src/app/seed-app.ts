@@ -1,5 +1,5 @@
-import {Component} from 'angular2/core';
-import {Router, RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
+import { Component } from '@angular/core';
+import { ROUTER_DIRECTIVES, Routes } from '@angular/router';
 
 import {Home} from './components/home/home';
 import {Jumpers} from './components/jumpers/jumpers';
@@ -12,11 +12,11 @@ import {Flags} from './components/flags/flags.component';
     templateUrl: 'app/seed-app.html',
     styleUrls: ['app/styles/app.css']
 })
-@RouteConfig([
-    { path: '/home', component: Home, name: 'Home', useAsDefault: true },
-    { path: '/jumpers', component: Jumpers, as: 'Jumpers' },
-    { path: '/jumper-edit', component: EditJumperComponent, as: 'JumperEdit' },
-    { path: '/flags', component: Flags, as: 'Flags' }
+@Routes([
+    { path: '/home', component: Home },
+    { path: '/jumpers', component: Jumpers },
+    { path: '/jumper-edit', component: EditJumperComponent },
+    { path: '/flags', component: Flags}
 ])
 export class SeedApp {
     mobileView: number = 992;

@@ -1,6 +1,6 @@
-import {Component, Input} from 'angular2/core';
-import {NgFor} from 'angular2/common';
-import {ROUTER_DIRECTIVES} from 'angular2/router';
+import { Component, Input } from '@angular/core';
+import {NgFor} from '@angular/common';
+import {ROUTER_DIRECTIVES} from '@angular/router';
 
 @Component({
   selector: 'collection-list',

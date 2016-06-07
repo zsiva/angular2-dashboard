@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import { Component } from '@angular/core';
 import {IconInputComponent} from '../../inputs/icon-input';
 import {MultiSelectBoxComponent} from '../../inputs/multi-select-box';
 import {JumperListService} from '../../../services/jumper_list';

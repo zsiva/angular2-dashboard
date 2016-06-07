@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import { Component } from '@angular/core';
 
 import {JumperListService} from '../../services/jumper_list';
 import {RdWidgetBody} from '../rd-widget-body/rd-widget-body';

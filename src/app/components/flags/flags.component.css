@@ -1,4 +1,4 @@
-.flags { background: url('./flags_sprite.png') no-repeat top left; width: 50px; height: 33px;  }
+.flags { background: url('app/components/flags/flags_sprite.png') no-repeat top left; width: 50px; height: 33px;  }
 .flags.afghanistan { background-position: 0 0; }
 .flags.aland_islands { background-position: 0 -35px; height: 32px; }
 .flags.albania { background-position: 0 -69px; height: 34px; }

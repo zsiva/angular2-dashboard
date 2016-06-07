@@ -1,7 +1,7 @@
-import {Component, Input} from 'angular2/core';
+import { Component, Input } from '@angular/core';
 
 import {RdLoading} from '../rd-loading/rd-loading';
-import {NgIf} from 'angular2/common';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'rd-widget-body',

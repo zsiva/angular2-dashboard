@@ -1,5 +1,5 @@
-import {Component} from 'angular2/core';
-import {NgFor} from 'angular2/common';
+import { Component } from '@angular/core';
+import { NgFor } from '@angular/common';
 
 import {FlagsListService} from './flags.service';
 import {RdWidgetBody} from '../rd-widget-body/rd-widget-body';

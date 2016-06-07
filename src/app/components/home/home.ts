@@ -1,5 +1,5 @@
-import {Component} from 'angular2/core';
-import {ROUTER_DIRECTIVES} from 'angular2/router';
+import { Component } from '@angular/core';
+import {ROUTER_DIRECTIVES} from '@angular/router';
 
 import {RdWidgetBody} from '../rd-widget-body/rd-widget-body';
 import {RdWidget} from '../rd-widget/rd-widget';
