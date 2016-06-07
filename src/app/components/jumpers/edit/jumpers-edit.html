@@ -7,7 +7,7 @@
             <rd-widget-body>
                 <fieldset [disabled]="!enabled">
                     <icon-input [iconclass]="'fa-user'" [placeholder]="'Name'" [value]="jumper.name"></icon-input>
-                    <icon-input [hidden]=enabled [iconclass]="'fa-trophy'" [placeholder]="'Points'" [value]="jumper.points"></icon-input>
+                    <icon-input [hidden]="enabled" [iconclass]="'fa-trophy'" [placeholder]="'Points'" [value]="jumper.points"></icon-input>
                     <icon-input [iconclass]="'fa-thumbs-up'" [placeholder]="'Likes'" [value]="jumper.likes"></icon-input>
                     <icon-input [iconclass]="'fa-child'" [placeholder]="'Jumps'" [value]="jumper.jumps"></icon-input>
                     <icon-input [iconclass]="'fa-flag-checkered'" [placeholder]="'Flags'" [value]="jumper.countries.length"></icon-input>

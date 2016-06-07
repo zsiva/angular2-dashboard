@@ -26,6 +26,12 @@ export class EditJumperComponent {
     }
 
     updateJumper() {
+        this.updatePoints();
         this.jumpersService.update(this.jumper);
+    }
+
+
+    updatePoints() {
+        this.jumper.points = this.jumper.likes + (this.jumper.jumps * 3);
     }
 }
