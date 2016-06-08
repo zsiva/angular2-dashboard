@@ -5,6 +5,7 @@ import {Home} from './components/home/home';
 import {Jumpers} from './components/jumpers/jumpers';
 import {EditJumperComponent} from './components/jumpers/edit/jumpers-edit';
 import {Flags} from './components/flags/flags.component';
+import {FlagEditComponent} from './components/flags/edit/flag.edit.component';
 
 @Component({
     selector: 'seed-app',
@@ -16,7 +17,8 @@ import {Flags} from './components/flags/flags.component';
     { path: '/home', component: Home },
     { path: '/jumpers', component: Jumpers },
     { path: '/jumper-edit', component: EditJumperComponent },
-    { path: '/flags', component: Flags}
+    { path: '/flags', component: Flags},
+    { path: '/flag-edit', component: FlagEditComponent}
 ])
 export class SeedApp {
     mobileView: number = 992;

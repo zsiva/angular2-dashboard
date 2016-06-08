@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NgFor } from '@angular/common';
 
 import {FlagsListService} from './flags.service';
@@ -7,7 +7,7 @@ import {RdWidget} from '../rd-widget/rd-widget';
 import {RdWidgetHeader} from '../rd-widget-header/rd-widget-header';
 import {CollectionList} from '../collection/collection-list';
 
-import {Flag} from './flag.model';
+import {FlagModel} from './flag.model';
 import {SearchNamePipe} from '../shared/search.pipe';
 
 @Component({
@@ -20,9 +20,9 @@ import {SearchNamePipe} from '../shared/search.pipe';
 
 })
 export class Flags {
-  flags:Flag[];
+  flags:FlagModel[];
   header:string[] = ['Flag', 'Name', 'Capital'];
-  flagName:string = '';
+  @Input() flagName:string = '';
 
 
   constructor(public flagsService: FlagsListService) {

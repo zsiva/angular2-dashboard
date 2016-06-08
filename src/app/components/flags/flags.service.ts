@@ -1,5 +1,7 @@
 import {Injectable} from '@angular/core';
 
+import {FlagModel} from './flag.model';
+
 @Injectable()
 export class FlagsListService {
     flags:any[] = [
@@ -49,11 +51,11 @@ export class FlagsListService {
     this.flags.push(value);
   }
   //TODO: get jumper through ID
-  get():any[] {
+  get():FlagModel[] {
     return this.flags[0];
   }
 
-  all():any[] {
+  all():FlagModel[] {
     return this.flags;
   }
 
