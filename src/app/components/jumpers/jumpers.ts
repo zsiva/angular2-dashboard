@@ -5,9 +5,11 @@ import {RdWidgetBody} from '../rd-widget-body/rd-widget-body';
 import {RdWidget} from '../rd-widget/rd-widget';
 import {RdWidgetHeader} from '../rd-widget-header/rd-widget-header';
 import {CollectionList} from '../collection/collection-list';
+import {SearchNamePipe} from '../shared/search.pipe';
 
 @Component({
   selector: 'jumpers',
+  pipes: [SearchNamePipe],
   providers: [JumperListService],
   directives: [RdWidgetBody, RdWidget, RdWidgetHeader, CollectionList],
   templateUrl: 'app/components/jumpers/jumpers.html'
@@ -15,6 +17,7 @@ import {CollectionList} from '../collection/collection-list';
 export class Jumpers {
   jumpers:any[];
   header:any[];
+  jumperName:string = '';
 
   constructor(public jumpersService: JumperListService) {
     this.jumpers = jumpersService.all().map((jumper) => {
