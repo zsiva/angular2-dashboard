@@ -6,6 +6,7 @@ import {RdWidgetBody} from '../rd-widget-body/rd-widget-body';
 import {RdWidget} from '../rd-widget/rd-widget';
 import {RdWidgetHeader} from '../rd-widget-header/rd-widget-header';
 import {CollectionList} from '../collection/collection-list';
+import { ROUTER_DIRECTIVES } from '@angular/router';
 
 import {FlagModel} from './flag.model';
 import {SearchNamePipe} from '../shared/search.pipe';
@@ -14,13 +15,14 @@ import {SearchNamePipe} from '../shared/search.pipe';
   selector: 'flags',
   providers: [FlagsListService],
   pipes: [SearchNamePipe],
-  directives: [RdWidgetBody, RdWidget, RdWidgetHeader, CollectionList, NgFor],
+  directives: [RdWidgetBody, RdWidget, RdWidgetHeader, CollectionList, NgFor, ROUTER_DIRECTIVES],
   templateUrl: 'app/components/flags/flags.component.html',
   styleUrls: ['app/components/flags/flags.component.css']
 
 })
 export class Flags {
   flags:FlagModel[];
+  selectedFlag: FlagModel;
   header:string[] = ['Flag', 'Name', 'Capital'];
   @Input() flagName:string = '';
 
@@ -28,4 +30,5 @@ export class Flags {
   constructor(public flagsService: FlagsListService) {
      this.flags = flagsService.all();
   }
+
 }

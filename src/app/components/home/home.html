@@ -27,7 +27,7 @@
     <div class="col-lg-6">
         <rd-widget>
             <rd-widget-header [icon]="'fa-users'" [title]="'Jumpers'">
-                <a class="text-right" [routerLink]="['/Jumpers']">Manage</a>
+                <a class="text-right" [routerLink]="['/jumpers']">Manage</a>
             </rd-widget-header>
             <rd-widget-body classes="medium no-padding">
                 <collection-list [actions]="false" [tableContent]="jumpers" [tableHeader]="jumpersHeader" [infoLink]="'/JumperEdit'"></collection-list>
@@ -37,7 +37,7 @@
     <div class="col-lg-6">
         <rd-widget>
             <rd-widget-header [icon]="'fa-globe'" [title]="'Countries'">
-                <a style="float: right">Manage</a>
+                <a class="text-right" [routerLink]="['/flags']">Manage</a>
             </rd-widget-header>
             <rd-widget-body classes="medium no-padding">
                 <collection-list [actions]="false" [tableContent]="flags" [tableHeader]="flagsHeader" [infoLink]="'/JumperEdit'"></collection-list>

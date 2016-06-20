@@ -10,14 +10,14 @@ import {ROUTER_DIRECTIVES} from '@angular/router';
   <table class="table table-bordered">
     <thead>
         <tr>
-            <th class="text-capitalize" *ngFor="#headerItem of tableHeader">{{headerItem}}</th>
+            <th class="text-capitalize" *ngFor="let headerItem of tableHeader">{{headerItem}}</th>
             <th [hidden]="!actions">Actions</th>
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="#row of tableContent">
-            <td *ngFor="#item of items(row);">{{row[item]}}</td>
-            <td [hidden]="!actions"><a class="text-right" [routerLink]="[infoLink, {id: '1'}]">Info</a></td>
+        <tr *ngFor="let row of tableContent">
+            <td *ngFor="let item of items(row);">{{row[item]}}</td>
+            <td [hidden]="!actions"><a class="text-right" [routerLink]="[infoLink]">Info</a></td>
         </tr>
       </tbody>
   </table>

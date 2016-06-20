@@ -18,7 +18,7 @@ import {FlagEditComponent} from './components/flags/edit/flag.edit.component';
     { path: '/jumpers', component: Jumpers },
     { path: '/jumper-edit', component: EditJumperComponent },
     { path: '/flags', component: Flags},
-    { path: '/flag-edit', component: FlagEditComponent}
+    { path: '/flag/:name', component: FlagEditComponent}
 ])
 export class SeedApp {
     mobileView: number = 992;

@@ -11,6 +11,7 @@
                       <thead>
                           <tr>
                               <th *ngFor="let headerItem of header">{{headerItem}}</th>
+                              <th>Details</th>
                           </tr>
                       </thead>
                       <tbody>
@@ -21,6 +22,8 @@
 
                               <td class="col-xs-5">{{flag.name}}</td>
                               <td class="col-xs-4">{{flag.capital}}</td>
+                              <td><a [routerLink]="['/flag', flag.class]">View</a></td>
+
                           </tr>
                         </tbody>
                     </table>
