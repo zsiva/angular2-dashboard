@@ -5,7 +5,7 @@ export class FlagModel {
 
     constructor(flagInfo:any) {
         this.name = flagInfo.name;
-        this.class = flagInfo.email;
-        this.capital = this.capital;
+        this.class = flagInfo.class;
+        this.capital = flagInfo.capital;
       }
 }

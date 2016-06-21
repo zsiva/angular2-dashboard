@@ -50,9 +50,9 @@ export class FlagsListService {
   add(value:any):void {
     this.flags.push(value);
   }
-  //TODO: get jumper through ID
-  get():FlagModel[] {
-    return this.flags[0];
+
+  get(name:string):FlagModel[] {
+      return this.flags.filter(flag => flag.class == name)[0];
   }
 
   all():FlagModel[] {
