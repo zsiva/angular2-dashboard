@@ -8,6 +8,7 @@
                 <fieldset [disabled]="!enabled">
                     <icon-input [iconclass]="'fa-globe'" [placeholder]="'Name'" [value]="flag.name"></icon-input>
                     <icon-input [iconclass]="'fa-anchor'" [placeholder]="'Capital'" [value]="flag.capital"></icon-input>
+                    <icon-input [iconclass]="'fa-user'" [placeholder]="'Jumpers on this country'" [value]="flag.jumpers"></icon-input>
                     <div class="pull-right" [hidden]=!enabled>
                         <button class="btn btn-default" (click)="updateFlag()">Save</button>
                     </div>

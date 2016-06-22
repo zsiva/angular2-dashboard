@@ -32,8 +32,4 @@ export class Home {
         this.flagsHeader = Object.keys(this.flags[0]);
     }
 
-    ngOnInit() {
-
-    }
-
 }
