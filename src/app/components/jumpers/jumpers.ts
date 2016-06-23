@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
+import { ROUTER_DIRECTIVES } from '@angular/router';
 
-import {JumperListService} from '../../services/jumper_list';
+import {JumperListService} from './jumper.service';
 import {RdWidgetBody} from '../rd-widget-body/rd-widget-body';
 import {RdWidget} from '../rd-widget/rd-widget';
 import {RdWidgetHeader} from '../rd-widget-header/rd-widget-header';
@@ -11,7 +12,7 @@ import {SearchNamePipe} from '../shared/search.pipe';
   selector: 'jumpers',
   pipes: [SearchNamePipe],
   providers: [JumperListService],
-  directives: [RdWidgetBody, RdWidget, RdWidgetHeader, CollectionList],
+  directives: [RdWidgetBody, RdWidget, RdWidgetHeader, CollectionList, ROUTER_DIRECTIVES],
   templateUrl: 'app/components/jumpers/jumpers.html'
 })
 export class Jumpers {

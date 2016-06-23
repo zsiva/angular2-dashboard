@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
+import { RouteSegment } from '@angular/router';
+
 import {IconInputComponent} from '../../inputs/icon-input';
 import {MultiSelectBoxComponent} from '../../inputs/multi-select-box';
-import {JumperListService} from '../../../services/jumper_list';
+import {JumperListService} from './../jumper.service';
 import {RdWidgetBody} from '../../rd-widget-body/rd-widget-body';
 import {RdWidget} from '../../rd-widget/rd-widget';
 import {RdWidgetHeader} from '../../rd-widget-header/rd-widget-header';
@@ -17,8 +19,8 @@ export class EditJumperComponent {
     jumper:any = [];
     enabled: boolean = false;
 
-    constructor(public jumpersService: JumperListService) {
-        this.jumper = jumpersService.get();
+    constructor(public jumpersService: JumperListService, private curr: RouteSegment) {
+        this.jumper = jumpersService.get(curr.getParam('name'));
     }
 
     enableEditor() {
